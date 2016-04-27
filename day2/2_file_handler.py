@@ -2,6 +2,7 @@
 #_*_ coding:utf-8 _*_
 
 f = file('hello.txt')      # 默认的打开方式是r
+f = open('hello.txt','r+')      #open 和 file两种打开方式没有区别
 
 for i in f.readlines():
 	print i
@@ -14,7 +15,7 @@ f.isatty()  #文件是否是一个终端
 f.next()   #迭代使用，跟readline类似
 f.read()   #以字符串形式读出所有行
 f.readlines()     #以列表形式读出所有行          	
-f.seek(0)       #主要用来跳到文件开始，跳到文件某个位置
+f.seek(0)       #主要用来跳到文件开始，跳到文件某个位置,可以用来处理增量日志，读取最新的一部分
 f.tell()        #打出当前在文件的位置
 f.truncate(100)    #从文件开头截断到第100个位置，跟当前所在位置无关
 
