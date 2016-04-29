@@ -17,9 +17,13 @@ s.swapcase()       #大小写互换
 l = s.split(str,'')    #将string转list, 以空格切分
 s.join(list,'')    #将list转string,以空格连接
 '|'.join(list)     #将list转string,以'|'连接
+''.join(['a','b'])
 
 #处理字符串的内置函数
 len(str)      #串长度
 cmp("my friend",str)    #字符串比较，第一个大，返回1,等于返回0，第一个小返回-1
 max('abcxyz')           #寻找字符串中最大的字符
 min('abcxyz')           #寻找字符串中最小的字符
+
+import sys
+sys.path     #可以看到sys所在目录
