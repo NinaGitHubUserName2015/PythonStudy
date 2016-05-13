@@ -58,4 +58,8 @@ show2('Nina','Joy','Elena')
 #参数可变，不管你传多少个参数，python都自动汇总包装成一个列表参数传给函数
 show3('Nina','Joy','Elena','Nina','Joy','Elena','Nina','Joy','Elena') 
 #参数可变，不管你传多少个参数，python都自动汇总包装成一个字典参数传给函数
-show4(name='Nina',age='14',gender='female')                
+show4(name='Nina',age='14',gender='female')               
+user_dict = {'k1':123,'k2':456}
+#传一个字典进去，要加上**
+show4(**user_dict)
+
